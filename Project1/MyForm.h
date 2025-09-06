@@ -39,7 +39,7 @@ namespace Project1 {
         int x = (screenW - srcW) / 2;
         int y = (screenH - srcH) / 2;
 
-        SetStretchBltMode(hWndDC, HALFTONE); // сглаживание но всё равно хуйня
+        SetStretchBltMode(hWndDC, HALFTONE); // сглаживание но всё равно пиксели.
         StretchBlt(hWndDC, 0, 0, WIDTH, HEIGHT, hDesktopDC, x, y, srcW, srcH, SRCCOPY);
 
         ReleaseDC(hDesktop, hDesktopDC);
@@ -430,4 +430,5 @@ namespace Project1 {
     };
 
 }
+
 
