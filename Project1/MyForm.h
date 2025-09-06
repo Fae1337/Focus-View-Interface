@@ -5,8 +5,8 @@
 #include <string>
 #include <stdlib.h>
 
-#pragma comment(lib, "user32.lib") // user32.lib
-#pragma comment(lib, "gdi32.lib")  // gdi32.lib
+#pragma comment(lib, "user32.lib") // либы 
+#pragma comment(lib, "gdi32.lib")  // необходимые для компиляции
 
 namespace Project1 {
 
@@ -39,7 +39,7 @@ namespace Project1 {
         int x = (screenW - srcW) / 2;
         int y = (screenH - srcH) / 2;
 
-        SetStretchBltMode(hWndDC, HALFTONE);
+        SetStretchBltMode(hWndDC, HALFTONE); // сглаживание но всё равно хуйня
         StretchBlt(hWndDC, 0, 0, WIDTH, HEIGHT, hDesktopDC, x, y, srcW, srcH, SRCCOPY);
 
         ReleaseDC(hDesktop, hDesktopDC);
@@ -435,4 +435,5 @@ namespace Project1 {
         launch();
     }
     };
+
 }
