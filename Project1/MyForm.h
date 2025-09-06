@@ -425,15 +425,9 @@ namespace Project1 {
         FPS = Convert::ToInt32(numericUpDown5->Value);
     }
     private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-        std::cout << std::endl << WIDTH << std::endl;
-        std::cout << HEIGHT << std::endl;
-        std::cout << xposition << std::endl;
-        std::cout << yposition << std::endl;
-        std::cout << Zoom << std::endl;
-        std::cout << FPS << std::endl;
-
         launch();
     }
     };
 
 }
+
